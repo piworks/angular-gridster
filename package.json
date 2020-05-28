@@ -1,14 +1,10 @@
 {
 	"name": "@piworks/angular-gridster",
-	"version": "0.13.16",
+	"version": "0.13.17",
 	"description": "This directive gives you gridster behavior",
 	"license": "MIT",
 	"homepage": "http://manifestwebdesign.github.io/angular-gridster",
 	"authors": "https://github.com/ManifestWebDesign/angular-gridster/graphs/contributors",
-	"publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org"
-	},
 	"devDependencies": {
 		"grunt": "^1.0.1",
 		"grunt-bump": "0.8.0",

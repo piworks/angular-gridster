@@ -81,9 +81,9 @@
 						gridster.floatItemsUp();
 					}
 					gridster.updateHeight(gridster.movingItem ? gridster.movingItem.sizeY : 0);
-					var allItemsInGrid = gridster.grid.flat().filter(e=> e != undefined);
+					var allItemsInGrid = gridster.grid.flat().filter(function(e) {return e != undefined;});
 					if(allItemsInGrid.length > 0 
-						&& allItemsInGrid.every(e => e.initialSetup) 
+						&& allItemsInGrid.every(function(e) {return e.initialSetup}) 
 						&& !gridster.initialSetupComplete){
 						$rootScope.$broadcast('gridster-setup-complete');
 						gridster.initialSetupComplete = true;
@@ -2231,7 +2231,7 @@
 							gridster.removeItem(item);
 						} catch (e) {}
 
-						if(gridster.grid && gridster.grid.flat().filter(e=> e != undefined).length <= 0){
+						if(gridster.grid && gridster.grid.flat().filter(function(e) {return e != undefined;}).length <= 0){
 							gridster.initialSetupComplete = false;
 						}
 						
